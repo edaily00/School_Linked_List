@@ -1,9 +1,13 @@
+#Author: Eric Daily
+#Github username: edaily00
+#Date: 7/25/2022
+#This program lets you manipulate a linked list
+"""The class creates the node holds data and next node"""
 class Node:
-
     def __init__(self, data):
         self.data = data
         self.next = None
-
+"""This is the linked list class"""
 class LinkedList:
 
     def __init__(self):
@@ -11,7 +15,6 @@ class LinkedList:
 
     def get_head(self):
         return self._head
-
 
     def rec_add(self, val, current):
 
@@ -131,10 +134,3 @@ class LinkedList:
         return self.to_plain_list_helper(the_list, self._head)
 
 
-list = LinkedList()
-list.add(5)
-list.add(4)
-list.add(2)
-list.remove(5)
-list.remove(4)
-list.remove(2)
