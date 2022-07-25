@@ -60,7 +60,7 @@ class LinkedList:
 
     def remove(self, val):
 
-        self.rec_remove(val, 0, self._head)
+        self.rec_remove(val, self._head, self._head)
 
     def is_empty(self):
         return self._head is None
@@ -131,4 +131,10 @@ class LinkedList:
         return self.to_plain_list_helper(the_list, self._head)
 
 
-"""hey"""
+list = LinkedList()
+list.add(5)
+list.add(4)
+list.add(2)
+list.remove(5)
+list.remove(4)
+list.remove(2)
